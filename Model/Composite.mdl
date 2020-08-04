@@ -1,0 +1,144 @@
+model Composite/1.
+
+use AZERW_tex.
+
+let g5=gamma5.
+
+parameter ee = 0.3133: 'Electromagnetic couplin constant',
+          SW = 0.4740: 'sin of Weinberg angle',
+	  CW = sqrt(1-SW**2) : 'cos of Weinberg angle',
+	  GG = 1.117: 'Strong coupling constant (Z point)',
+	  a = 1,
+ 	  s12 = 0.221   : 'Parameter of C-K-M matrix (PDG-94)',
+ 	  s23 = 0.040   : 'Parameter of C-K-M matrix (PDG-94)',
+          s13 = 0.0035  : 'Parameter of C-K-M matrix (PDG-94)',
+          c12  = sqrt(1-s12**2) : 'parameter  of C-K-M matrix',
+          c23  = sqrt(1-s23**2) : 'parameter  of C-K-M matrix',
+          c13  = sqrt(1-s13**2) : 'parameter  of C-K-M matrix',
+          Vud = c12*c13                : 'C-K-M matrix element',
+          Vus = s12*c13                : 'C-K-M matrix element',
+          Vub = s13     	       : 'C-K-M matrix element',
+          Vcd = (-s12*c23-c12*s23*s13) : 'C-K-M matrix element',
+          Vcs = (c12*c23-s12*s23*s13)  : 'C-K-M matrix element',
+          Vcb = s23*c13                : 'C-K-M matrix element',
+          Vtd = (s12*s23-c12*c23*s13)  : 'C-K-M matrix element',
+          Vts = (-c12*s23-s12*c23*s13) : 'C-K-M matrix element',
+          Vtb = c23*c13  	       : 'C-K-M matrix element'.
+
+OrthMatrix( { {Vud,Vus,Vub}, {Vcd,Vcs,Vcb}, {Vtd,Vts,Vtb}} ).
+
+alias     ckm(1,1)=Vud, ckm(2,1)=Vus, ckm(3,1)=Vub,
+          ckm(1,2)=Vcd, ckm(2,2)=Vcs, ckm(3,2)=Vcb,
+          ckm(1,3)=Vtd, ckm(2,3)=Vts, ckm(3,3)=Vtb.
+
+vector    A/A: (photon),
+          Z/Z: ('Z boson', mass MZ = 91.187),
+          'W+'/'W-': ('W boson', mass MW = MZ*CW),
+       	  G/G: (gluon, color c8),
+          'R+'/'R-': ('rho boson', mass MR = 1000),                   
+          'R0'/'R0': ('rho^0 boson', mass MRO = 1000),
+          OM/OM: ('omega boson', mass MOM = 1000).
+
+scalar    H/H: (Higgs, mass MH = 125, width wH = 1.461).    
+	
+spinor 	  n1:(neutrino,left), 	     e1:(electron),
+	  n2:('mu-neutrino',left),   e2:(muon, mass Mm  = 0.1057),
+	  n3:('tau-neutrino',left),  e3:('tau-lepton', mass Mt  = 1.777).
+
+spinor	  u:('u-quark',color c3),
+	  d:('d-quark',color c3),
+	  c:('c-quark',color c3, mass Mc  = 1.300),
+	  s:('s-quark',color c3, mass Ms = 0.200),
+	  t:('t-quark',color c3, mass Mtop = 170, width wtop = 1.442),
+	  b:('b-quark',color c3, mass Mb =  4.300 ).
+
+let   v=2*MW*SW/ee, g2 = 2*MR/(v*a).
+
+let   g=ee/SW, g3=ee/CW.
+
+let   x1 = 2*(g/g2)**2, x2 = 2*(g/g2)**2, x3 = 2*(g/g2)**2.
+			
+let   l1={n1,e1}, L1={N1,E1}.
+let   l2={n2,e2}, L2={N2,E2}.
+let   l3={n3,e3}, L3={N3,E3}.
+
+let   q1={u,d}, Q1={U,D}, q1a={u,Vud*d+Vus*s+Vub*b}, Q1a={U,Vud*D+Vus*S+Vub*B}.
+let   q2={c,s}, Q2={C,S}, q2a={c,Vcd*d+Vcs*s+Vcb*b}, Q2a={C,Vcd*D+Vcs*S+Vcb*B}. 
+let   q3={t,b}, Q3={T,B}, q3a={t,Vtd*d+Vts*s+Vtb*b}, Q3a={T,Vtd*D+Vts*S+Vtb*B}.
+
+%Autoestados de sabor en función de los autoestados de masa
+
+let BO = CW*A - SW*Z - (g3/g2)*OM. 
+let OME = (g3/g2)*CW*A - (g3/g2)*SW*Z + OM.           
+let W3 = SW*A + CW*Z - (g/g2)*'R0'.
+let R3 = (g/g2)*SW*A + (g/g2)*CW*Z + 'R0'.
+let 'w+' = ('W+' - (g/g2)*'R+'), 'w-' = ('W-' - (g/g2)*'R-').
+let 'r+' = ((g/g2)*'W+' + 'R+'), 'r-' = ((g/g2)*'W-' + 'R-').
+let W1 = ('w+' + 'w-')/Sqrt2, W2 = i*('w+' - 'w-')/Sqrt2.
+let R1 = ('r+' + 'r-')/Sqrt2, R2 = i*('r+' - 'r-')/Sqrt2.
+
+let WW = {W1, W2, W3}, RR = {R1, R2, R3}, WW1 = {'w+',W3,'w-'}, WW2 = {'w-',W3,'w+'}, RR1 = {'r+',R3,'r-'}.
+
+% Self-interaction of gauge bosons
+
+lterm -F**2/4 + MR**2*((g3/g2)**2*BO^mu*BO^mu - (g3/g2)*BO^mu*OME^mu)/2      
+
+		where    F=deriv^mu*BO^nu-deriv^nu*BO^mu.
+
+lterm -F**2/4 + MR**2*((g3/g2)**2*OME^mu*OME^mu - (g3/g2)*BO^mu*OME^mu)/2    
+
+		where    F=deriv^mu*OME^nu-deriv^nu*OME^mu.
+
+lterm -F**2/4 + MR**2*((g/g2)**2*WW^mu^a*WW^mu^a - (g/g2)*WW^mu^a*RR^mu^a)/2  
+
+		where    F=deriv^mu*WW^nu^a-deriv^nu*WW^mu^a +g*eps^a^b^c*WW^mu^b*WW^nu^c.
+
+lterm -F**2/4 + MR**2*((g/g2)**2*RR^mu^a*RR^mu^a - (g/g2)*WW^mu^a*RR^mu^a)/2 
+
+		where    F=deriv^mu*RR^nu^a-deriv^nu*RR^mu^a +g2*eps^a^b^c*RR^mu^b*RR^nu^c.
+
+% left fermion interaction with gauge fields
+
+lterm  	anti(psi)*i*gamma*(1-g5)/2*(deriv + i*g*(1-x1)*taupm*WW1/2 + i*g2*x1*taupm*RR1/2 + i*Y*g3*(1-x2)*BO + i*Y*g2*x2*OME)*psi
+		
+		where 
+			psi=l1,  Y=-1/2;
+			psi=l2,  Y=-1/2;
+			psi=l3,  Y=-1/2;
+			psi=q1a, Y= 1/6;
+			psi=q2a, Y= 1/6;
+			psi=q3a, Y= 1/6.
+
+% right fermion interaction with gauge fields
+
+lterm  	anti(psi)*i*gamma*(1+g5)/2*(deriv + i*Y*g3*(1-x3)*BO + i*Y*g2*x3*OME)*psi
+
+		where 
+			psi=e1,Y= -1;
+			psi=e2,Y= -1;
+			psi=e3,Y= -1;
+			psi=u, Y=  2/3;
+			psi=c, Y=  2/3;
+			psi=t, Y=  2/3;
+			psi=d, Y= -1/3;
+			psi=s, Y= -1/3;
+			psi=b, Y= -1/3.
+
+% Higgs sector
+
+let phi = { 0, (vev(2*MW*SW/ee)+H)/Sqrt2 }, Phi = { 0, (vev(2*MW*SW/ee)+H)/Sqrt2 }.            
+
+lterm -2*lambda*(phi*Phi-v**2/2)**2  where  lambda=(g*MH/MW)**2/16.
+
+let Dphi^mu^a = (deriv^mu + i*g3/2*BO^mu)*phi^a + (1/2)*i*g*taupm^a^b^c*WW1^mu^c*phi^b.
+
+let DPhi^mu^a = (deriv^mu - i*g3/2*BO^mu)*Phi^a - (1/2)*i*g*taupm^a^b^c*WW2^mu^c*Phi^b.
+
+lterm Dphi*DPhi.
+
+
+SetAngle(1-SW**2=CW**2).
+SetEM(A,ee).
+CheckHerm.
+
+

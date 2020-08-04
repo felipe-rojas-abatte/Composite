@@ -1,0 +1,33 @@
+Composite
+ Constraints 
+ Name  |> Expression                                                                        <|
+CW     |sqrt(1-SW^2) % cos of Weinberg angle
+c12    |sqrt(1-s12^2) % parameter  of C-K-M matrix
+c23    |sqrt(1-s23^2) % parameter  of C-K-M matrix
+c13    |sqrt(1-s13^2) % parameter  of C-K-M matrix
+Vud    |c12*c13 % C-K-M matrix element
+Vus    |s12*c13 % C-K-M matrix element
+Vub    |s13 % C-K-M matrix element
+Vcd    |-s12*c23-c12*s23*s13 % C-K-M matrix element
+Vcs    |c12*c23-s12*s23*s13 % C-K-M matrix element
+Vcb    |s23*c13 % C-K-M matrix element
+Vtd    |s12*s23-c12*c23*s13 % C-K-M matrix element
+Vts    |-c12*s23-s12*c23*s13 % C-K-M matrix element
+Vtb    |c23*c13 % C-K-M matrix element
+MW     |MZ*CW % mass of W boson
+B00000 |MW^2*a^2+MR^2
+B00001 |-MW^2*a^2-MR^2
+B00002 |MR^2+MW^2*a^2
+B00003 |-MR^2-MW^2*a^2
+B00004 |6*MR^2*SW^2-4*MR^2-4*MW^2*SW^2*a^2
+B00005 |-3*MR^2*SW^2+2*MR^2+2*MW^2*SW^2*a^2
+B00006 |MR^2+2*MW^2*a^2
+B00007 |3*MR^2*SW^2-2*MR^2-2*MW^2*SW^2*a^2
+B00008 |12*MR^2*SW^2-8*MR^2-8*MW^2*SW^2*a^2
+B00009 |MW^4*a^4-MR^4
+B00010 |-MW^4*a^4+MR^4
+B00011 |2*MW^2*a^2+2*MR^2
+B00012 |2*MR^2+2*MW^2*a^2
+B00013 |2*MW^4*a^4-2*MR^4
+B00014 |2*MW^6*a^6+2*MR^6
+B00015 |-MW^6*a^6-MR^6

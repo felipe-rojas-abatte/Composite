@@ -1,0 +1,459 @@
+\documentstyle[12pt]{article}
+\textwidth 17cm
+\textheight 25cm
+\hoffset -3cm
+\voffset -1cm
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+${A}_{\mu }$ \phantom{-} ${A}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ M_\rho{}^2  \cdot \cos{\theta}_w{}^2 }\big( \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot p_1^\mu p_1^\nu +2 \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} $ \\[2mm]
+  & $-2 \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu +2 \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} - M_W{}^4 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^4 \cdot g^{\mu \nu} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\omega{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W \cdot \sin{\theta}_w \cdot a}{ M_\rho \cdot \cos{\theta}_w{}^2 }g^{\mu \nu} \big( \cos{\theta}_w{}^2  M_\rho{}^2 - M_W{}^2  \sin{\theta}_w{}^2  a{}^2 \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W \cdot \sin{\theta}_w \cdot a}{ M_\rho}g^{\mu \nu} \big( M_\rho{}^2 - M_W{}^2  a{}^2 \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^2  \cdot \sin{\theta}_w \cdot a{}^2 }{ \cos{\theta}_w{}^3  \cdot M_\rho{}^2 }\big( \cos{\theta}_w{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} -2 \cos{\theta}_w{}^2 \cdot  \sin{\theta}_w{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - \cos{\theta}_w{}^2 \cdot p_1^\mu p_1^\nu +2 \cos{\theta}_w{}^2 \cdot  \sin{\theta}_w{}^2 \cdot p_1^\mu p_1^\nu $ \\[2mm]
+  & $+ \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot g^{\mu \nu} -2 \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot g^{\mu \nu} +2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-}  &
+	$-\big( MH{}^2 -p_1^\mu p_1^\mu \big)$\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-}  &
+	$-p_1^\mu \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\omega{}_{\mu }$ \phantom{-} $\omega{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ \cos{\theta}_w{}^4  \cdot M_\rho{}^2 }\big( \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  \sin{\theta}_w{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} $ \\[2mm]
+  & $-3 \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} + \cos{\theta}_w{}^4 \cdot  M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - \cos{\theta}_w{}^4 \cdot  M_\rho{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  \sin{\theta}_w{}^4 \cdot  a{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+$\omega{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^4  \cdot \sin{\theta}_w{}^2  \cdot a{}^2 }{ \cos{\theta}_w{}^2  \cdot M_\rho{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+$\omega{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W \cdot \sin{\theta}_w{}^2  \cdot a}{ \cos{\theta}_w{}^3  \cdot M_\rho}g^{\mu \nu} \big( \cos{\theta}_w{}^2  M_\rho{}^2 - M_W{}^2  \sin{\theta}_w{}^2  a{}^2 + M_W{}^2 \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ M_\rho{}^2 }\big( M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} -3 M_\rho{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  a{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W \cdot a}{ M_\rho}g^{\mu \nu} \big( M_\rho{}^2 - M_W{}^2  a{}^2 + M_W{}^2 \big)$\\[2mm]
+$\rho^-{}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W \cdot a}{ M_\rho}g^{\mu \nu} \big( M_\rho{}^2 - M_W{}^2  a{}^2 + M_W{}^2 \big)$\\[2mm]
+$\rho^0{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ M_\rho{}^2 }\big( M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} -3 M_\rho{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} $\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+ & $$ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  a{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+$\rho^0{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W \cdot a}{ \cos{\theta}_w \cdot M_\rho}g^{\mu \nu} \big( \cos{\theta}_w{}^2  M_\rho{}^2 - \cos{\theta}_w{}^2  M_W{}^2  a{}^2 + M_W{}^2 \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-}  &
+	$-p_1^\mu \delta_{p q} \gamma_{a c}^\mu \delta_{c b} $\\[2mm]
+$W^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ M_\rho{}^2 }\big( M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_1^\mu p_1^\nu + M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} - M_\rho{}^2 \cdot  M_W{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+${Z}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{ M_\rho{}^2  \cdot \cos{\theta}_w{}^4 }\big( \cos{\theta}_w{}^4 \cdot  M_\rho{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} - \cos{\theta}_w{}^4 \cdot  M_\rho{}^2 \cdot p_1^\mu p_1^\nu -2 \cos{\theta}_w{}^4 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} $ \\[2mm]
+  & $+ \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho p_1^\rho g^{\mu \nu} +2 \cos{\theta}_w{}^4 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu - \cos{\theta}_w{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot p_1^\mu p_1^\nu $ \\[2mm]
+  & $-2 \cos{\theta}_w{}^4 \cdot  M_\rho{}^2 \cdot  M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} + \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot  M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} +3 \cos{\theta}_w{}^2 \cdot  M_W{}^4 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^4 \cdot g^{\mu \nu} $ \\[2mm]
+  & $- M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} - \cos{\theta}_w{}^2 \cdot  M_\rho{}^2 \cdot  M_W{}^2 \cdot g^{\mu \nu} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-}  &
+	$\frac{ e}{ M_\rho{}^2 }\big( M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} $ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} + M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} - M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} + M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} - M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-}  &
+	$\frac{ e}{ M_\rho{}^2 }\big( M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} - M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} + M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} + M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} $ \\[2mm]
+  & $- M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} + M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} $ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$\frac{1}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcb \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcb \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+$\bar{b}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vtb \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vtb \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vub \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{b}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vub \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcb \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcb \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$-\frac{2}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +12 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -8 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-8 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(4 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcd \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcd \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcs \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{c}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcs \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcd \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcd \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$\frac{1}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vtd \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+$\bar{d}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vtd \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vud \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{d}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vud \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$ e\gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{e}{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$ e\gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\mu}{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$ e\gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\tau}{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-}  &
+	$-\frac{3}{2}\frac{ MH{}^2  \cdot e}{ M_W \cdot \sin{\theta}_w}$\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} $\omega{}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W{}^3  \cdot \sin{\theta}_w{}^3  \cdot a{}^2  \cdot e}{ \cos{\theta}_w{}^4  \cdot M_\rho{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^3  \cdot \sin{\theta}_w \cdot a{}^2  \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W{}^2  \cdot \sin{\theta}_w \cdot a \cdot e}{ \cos{\theta}_w{}^3  \cdot M_\rho}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W{}^3  \cdot a{}^2  \cdot e}{ M_\rho{}^2  \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^2  \cdot a \cdot e}{ M_\rho \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^2  \cdot a \cdot e}{ M_\rho \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W{}^3  \cdot a{}^2  \cdot e}{ M_\rho{}^2  \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$-\frac{ M_W{}^2  \cdot a \cdot e}{ \cos{\theta}_w \cdot M_\rho \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} $W^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W \cdot e}{ \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${Z}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$\frac{ M_W \cdot e}{ \cos{\theta}_w{}^2  \cdot \sin{\theta}_w}\cdot g^{\mu \nu} $\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $e{}_{b }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big(3 M_\rho{}^2  \sin{\theta}_w{}^2 -2 M_\rho{}^2 -2 M_W{}^2  \sin{\theta}_w{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^e{}_{a }$ \phantom{-} $\nu^e{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\mu{}_{b }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big(3 M_\rho{}^2  \sin{\theta}_w{}^2 -2 M_\rho{}^2 -2 M_W{}^2  \sin{\theta}_w{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\mu{}_{a }$ \phantom{-} $\nu^\mu{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\tau{}_{b }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot e}{ \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big(3 M_\rho{}^2  \sin{\theta}_w{}^2 -2 M_\rho{}^2 -2 M_W{}^2  \sin{\theta}_w{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{\nu}^\tau{}_{a }$ \phantom{-} $\nu^\tau{}_{b }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\cdot \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-}  &
+	$-\frac{ e}{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w \cdot a}\big( M_W{}^4 \cdot  a{}^4 \cdot p_1^\nu g^{\mu \rho} - M_W{}^4 \cdot  a{}^4 \cdot p_1^\rho g^{\mu \nu} - M_W{}^4 \cdot  a{}^4 \cdot p_2^\mu g^{\nu \rho} + M_W{}^4 \cdot  a{}^4 \cdot p_2^\rho g^{\mu \nu} $ \\[2mm]
+  & $+ M_W{}^4 \cdot  a{}^4 \cdot p_3^\mu g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot p_3^\nu g^{\mu \rho} - M_\rho{}^4 \cdot p_1^\nu g^{\mu \rho} + M_\rho{}^4 \cdot p_1^\rho g^{\mu \nu} + M_\rho{}^4 \cdot p_2^\mu g^{\nu \rho} - M_\rho{}^4 \cdot p_2^\rho g^{\mu \nu} $ \\[2mm]
+  & $- M_\rho{}^4 \cdot p_3^\mu g^{\nu \rho} + M_\rho{}^4 \cdot p_3^\nu g^{\mu \rho} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} ${Z}_{\rho }$ \phantom{-}  &
+	$\frac{ \cos{\theta}_w \cdot e}{ M_\rho{}^2  \cdot \sin{\theta}_w}\big( M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} $ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} + M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} - M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} + M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} - M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-}  &
+	$\frac{ e}{ M_\rho{}^2  \cdot \sin{\theta}_w}\big( M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} $ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} + M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} - M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} + M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} - M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} \big)$\\[2mm]
+$\rho^-{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-}  &
+	$\frac{ e}{ M_\rho{}^2  \cdot \sin{\theta}_w}\big( M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} + M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} $ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} + M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} - M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} - M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} + M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} $ \\[2mm]
+  & $+ M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vcs \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $c{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vcs \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$\frac{1}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(6 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -4 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-4 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $+2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(2 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vts \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vts \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vus \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{s}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $W^-{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vus \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vtb \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+$\bar{t}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vtb \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vtd \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vtd \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vts \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vts \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$-\frac{2}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +12 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -8 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-8 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{t}{}_{a p }$ \phantom{-} $t{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(4 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vub \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $b{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vub \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vud \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $d{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vud \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot\sqrt{2} \cdot Vus \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $s{}_{b q }$ \phantom{-} $W^+{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{\sqrt{2} \cdot Vus \cdot e}{ \sin{\theta}_w}\cdot \delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} $\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} ${A}_{\mu }$ \phantom{-}  &
+	$-\frac{2}{3} e\delta_{p q} \gamma_{a c}^\mu \cdot \delta_{c b} $\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $\omega{}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ M_W \cdot a \cdot e}{ \cos{\theta}_w{}^2  \cdot M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(3 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} -2 M_\rho{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-2 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1-\gamma^5)_{c b}\over 2} +12 M_\rho{}^2 \cdot  \sin{\theta}_w{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} -8 M_\rho{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} $ \\[2mm]
+  & $-8 M_W{}^2 \cdot  \sin{\theta}_w{}^2 \cdot  a{}^2 \cdot {(1+\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e}{ M_\rho{}^3  \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu {(1-\gamma^5)_{c b}\over 2} \big( M_\rho{}^2 +2 M_W{}^2  a{}^2 \big)$\\[2mm]
+$\bar{u}{}_{a p }$ \phantom{-} $u{}_{b q }$ \phantom{-} ${Z}_{\mu }$ \phantom{-}  &
+	$\frac{1}{6}\frac{ e}{ \cos{\theta}_w \cdot \sin{\theta}_w}\delta_{p q} \gamma_{a c}^\mu \big(4 \sin{\theta}_w{}^2 \cdot \delta_{c b} -3{(1-\gamma^5)_{c b}\over 2} \big)$\\[2mm]
+$W^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-} ${Z}_{\rho }$ \phantom{-}  &
+	$\frac{ \cos{\theta}_w \cdot e}{ \sin{\theta}_w \cdot M_\rho{}^2 }\big( M_\rho{}^2 \cdot p_1^\nu g^{\mu \rho} - M_\rho{}^2 \cdot p_1^\rho g^{\mu \nu} - M_\rho{}^2 \cdot p_2^\mu g^{\nu \rho} + M_\rho{}^2 \cdot p_2^\rho g^{\mu \nu} + M_\rho{}^2 \cdot p_3^\mu g^{\nu \rho} $ \\[2mm]
+  & $- M_\rho{}^2 \cdot p_3^\nu g^{\mu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_1^\nu g^{\mu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_1^\rho g^{\mu \nu} - M_W{}^2 \cdot  a{}^2 \cdot p_2^\mu g^{\nu \rho} + M_W{}^2 \cdot  a{}^2 \cdot p_2^\rho g^{\mu \nu} $\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+ & $$ \\[2mm]
+  & $+ M_W{}^2 \cdot  a{}^2 \cdot p_3^\mu g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot p_3^\nu g^{\mu \rho} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} ${A}_{\nu }$ \phantom{-} $\rho^+{}_{\rho }$ \phantom{-} $\rho^-{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} ${A}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^2 }\big(2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $- M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-} $\rho^0{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} + M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w}\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w}\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} $W^+{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w}\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+${A}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w \cdot e{}^2 }{ \sin{\theta}_w \cdot M_\rho{}^2 }\big(2 M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} +2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $- M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-}  &
+	$-\frac{3}{4}\frac{ MH{}^2  \cdot e{}^2 }{ M_W{}^2  \cdot \sin{\theta}_w{}^2 }$\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} $\omega{}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W{}^2  \cdot \sin{\theta}_w{}^2  \cdot a{}^2  \cdot e{}^2 }{ \cos{\theta}_w{}^4  \cdot M_\rho{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W{}^2  \cdot a{}^2  \cdot e{}^2 }{ \cos{\theta}_w{}^2  \cdot M_\rho{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\omega{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W \cdot a \cdot e{}^2 }{ \cos{\theta}_w{}^3  \cdot M_\rho}\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W{}^2  \cdot a{}^2  \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\rho^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e{}^2 }{ M_\rho \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\rho^-{}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e{}^2 }{ M_\rho \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ M_W{}^2  \cdot a{}^2  \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $\rho^0{}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$-\frac{1}{2}\frac{ M_W \cdot a \cdot e{}^2 }{ \cos{\theta}_w \cdot M_\rho \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} $W^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ e{}^2 }{ \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+${H}_{}$ \phantom{-} ${H}_{}$ \phantom{-} ${Z}_{\mu }$ \phantom{-} ${Z}_{\nu }$ \phantom{-}  &
+	$\frac{1}{2}\frac{ e{}^2 }{ \cos{\theta}_w{}^2  \cdot \sin{\theta}_w{}^2 }\cdot g^{\mu \nu} $\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-} $\rho^-{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^4  \cdot M_W{}^2  \cdot \sin{\theta}_w{}^2  \cdot a{}^2 }\big(2 M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_\rho{}^6 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $- M_\rho{}^6 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^6 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w{}^2  \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} + M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^+{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $- M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $\rho^-{}_{\rho }$ \phantom{-} $W^+{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w{}^2  \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} + M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} $\rho^0{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^4  \cdot M_W{}^2  \cdot \sin{\theta}_w{}^2  \cdot a{}^2 }\big(2 M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^6 \cdot  a{}^6 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^6 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^6 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^6 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$\frac{ \cos{\theta}_w \cdot e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w{}^2  \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} + M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} ${Z}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w{}^2  \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w{}^2  \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} + M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$\rho^+{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+$\rho^-{}_{\mu }$ \phantom{-} $\rho^-{}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-} $W^+{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $- M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$\rho^-{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $\rho^0{}_{\rho }$ \phantom{-} $W^+{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ M_\rho{}^3  \cdot M_W \cdot \sin{\theta}_w{}^2  \cdot a}\big(2 M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^4 \cdot  a{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $-2 M_\rho{}^4 \cdot g^{\mu \sigma} g^{\nu \rho} + M_\rho{}^4 \cdot g^{\mu \rho} g^{\nu \sigma} + M_\rho{}^4 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|} \hline
+Fields in the vertex & Variational derivative of Lagrangian by fields \\ \hline
+$\rho^-{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w \cdot e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} - M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} \big)$\\[2mm]
+$\rho^0{}_{\mu }$ \phantom{-} $\rho^0{}_{\nu }$ \phantom{-} $W^+{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$-\frac{ e{}^2 }{ M_\rho{}^2  \cdot \sin{\theta}_w{}^2 }\big(2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $+2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\[2mm]
+$W^+{}_{\mu }$ \phantom{-} $W^+{}_{\nu }$ \phantom{-} $W^-{}_{\rho }$ \phantom{-} $W^-{}_{\sigma }$ \phantom{-}  &
+	$\frac{ e{}^2 }{ \sin{\theta}_w{}^2  \cdot M_\rho{}^2 }\big(2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} $ \\[2mm]
+  & $- M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} \big)$\\[2mm]
+$W^+{}_{\mu }$ \phantom{-} $W^-{}_{\nu }$ \phantom{-} ${Z}_{\rho }$ \phantom{-} ${Z}_{\sigma }$ \phantom{-}  &
+	$-\frac{ \cos{\theta}_w{}^2  \cdot e{}^2 }{ \sin{\theta}_w{}^2  \cdot M_\rho{}^2 }\big(2 M_\rho{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} - M_\rho{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_\rho{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} +2 M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \nu} g^{\rho \sigma} $ \\[2mm]
+  & $- M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \rho} g^{\nu \sigma} - M_W{}^2 \cdot  a{}^2 \cdot g^{\mu \sigma} g^{\nu \rho} \big)$\\ \hline
+\end{tabular}
+
+\end{center}
+\end{document}
+
